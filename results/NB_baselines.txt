@@ -1,0 +1,31 @@
+with offensive words
+-alg "NB" --vectorizer "BOW" --model_type "ML"
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.701 & 0.708 & 0.697 & 0.734 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.744 & 0.759 & 0.733 & 0.803 \\
+
+
+marked offensive words
+-alg "NB" --vectorizer "BOW" --model_type "ML" --offensive_replacement "mark"
+
+f1-score & precision & recall & accuracy \\ \hline
+0.696 & 0.701 & 0.693 & 0.728 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.722 & 0.736 & 0.712 & 0.787 \\
+
+
+
+without offensive words
+-alg "NB" --vectorizer "BOW" --model_type "ML" --offensive_replacement "remove"
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.638 & 0.649 & 0.634 & 0.685 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.647 & 0.674 & 0.636 & 0.744 \\

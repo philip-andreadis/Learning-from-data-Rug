@@ -1,0 +1,10 @@
+nltk
+demoji
+numpy
+pandas
+sklearn
+tensorflow
+keras
+better-profanity
+transformers
+wordsegment

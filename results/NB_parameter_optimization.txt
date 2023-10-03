@@ -1,0 +1,36 @@
+with offensive words
+-alg "NB" --vectorizer "BOW" --stem --model_type "ML" --offensive_replacement None --random_search
+
+Best hyperparameters: {'fit_prior': True, 'alpha': 2.0}
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.719 & 0.734 & 0.711 & 0.755 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.75 & 0.785 & 0.731 & 0.816 \\
+
+marked offensive words
+-alg "NB" --vectorizer "BOW" --model_type "ML" --offensive_replacement "mark" --random_search
+
+Best hyperparameters: {'fit_prior': False, 'alpha': 3.0}
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.701 & 0.699 & 0.704 & 0.724 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.714 & 0.719 & 0.711 & 0.774 \\
+
+
+without offensive words
+-alg "NB" --vectorizer "BOW" --pos_tag --model_type "ML" --offensive_replacement "remove" --random_search
+
+Best hyperparameters: {'fit_prior': False, 'alpha': 2.0}
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.677 & 0.674 & 0.682 & 0.698 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.677 & 0.676 & 0.678 & 0.738 \\

@@ -1,0 +1,14 @@
+f1-score & precision & recall & accuracy \\ \hline
+0.791 & 0.792 & 0.789 & 0.81 \\
+f1-score & precision & recall & accuracy \\ \hline
+0.816 & 0.826 & 0.807 & 0.856 \\
+
+f1-score & precision & recall & accuracy \\ \hline
+0.786 & 0.79 & 0.782 & 0.807 \\
+f1-score & precision & recall & accuracy \\ \hline
+0.811 & 0.824 & 0.801 & 0.853 \\
+
+f1-score & precision & recall & accuracy \\ \hline
+0.794 & 0.795 & 0.793 & 0.813 \\
+f1-score & precision & recall & accuracy \\ \hline
+0.817 & 0.827 & 0.809 & 0.857 \\

@@ -1,0 +1,71 @@
+with offensive words
+-alg "LSVM" --vectorizer "BOW" --stem --model_type "ML" --offensive_replacement None --random_search --most_important_features
+
+Best hyperparameters: {'tol': 1.0, 'random_state': 42, 'max_iter': 2000, 'loss': 'hinge', 'intercept_scaling': 1.25, 'fit_intercept': True, 'dual': True, 'class_weight': 'balanced', 'C': 0.5}
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.723 & 0.737 & 0.716 & 0.758 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.723 & 0.736 & 0.713 & 0.787 \\
+
+most important features:
+organis
+symbol
+nike
+doctor
+shoe
+enter
+fyi
+space
+staff
+review
+
+marked offensive words
+-alg "LSVM" --vectorizer "BOW" --pos_tag --model_type "ML" --offensive_replacement "mark" --random_search --most_important_features
+
+Best hyperparameters: {'tol': 1e-05, 'random_state': 42, 'max_iter': 500, 'loss': 'hinge', 'intercept_scaling': 1.0, 'fit_intercept': True, 'dual': True, 'class_weight': None, 'C': 0.75}
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.711 & 0.722 & 0.705 & 0.746 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.727 & 0.732 & 0.723 & 0.785 \\
+
+most important features:
+church_nn
+voting_vbg
+ya_nn
+baltimore_nn
+bless_nn
+feinstein_nn
+permission_nn
+save_vbp
+civilians_nns
+pressure_nn
+
+
+without offensive words
+-alg "LSVM" --vectorizer "BOW" --pos_tag --stem --ngram_min 1 --ngram_max 3 --model_type "ML" --offensive_replacement "remove"
+Best hyperparameters: {'tol': 0.1, 'random_state': 42, 'max_iter': 5000, 'loss': 'squared_hinge', 'intercept_scaling': 1.25, 'fit_intercept': True, 'dual': False, 'class_weight': None, 'C': 1.0}
+
+Validation scores
+f1-score & precision & recall & accuracy \\ \hline
+0.67 & 0.677 & 0.666 & 0.708 \\
+Test scores
+f1-score & precision & recall & accuracy \\ \hline
+0.653 & 0.657 & 0.65 & 0.727 \\
+
+most important features:
+pressure_nn
+about_in a_dt
+blue_nn
+msm_nn
+so_rb good_jj
+wish_jj
+girl_nn you_prp
+answer_nn
+film_nn
+you_prp know_vbp
