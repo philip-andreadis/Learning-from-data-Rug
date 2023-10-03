@@ -1,3 +1,8 @@
+Authors:  
+Marios Souroulla  
+Arjan Dekker  
+Filippos Andreadis
+
 This repository contains the code and files required to run the experiments we performed for our 
 research. The three main important scripts are `create_features.py`, `train_model.py` and 
 `evaluate_model.py`. For each of the files, refer to `argparser.py` to find the parameters you 
