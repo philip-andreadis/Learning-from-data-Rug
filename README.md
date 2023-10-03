@@ -1,7 +1,9 @@
 Authors:  
 Marios Souroulla  
 Arjan Dekker  
-Filippos Andreadis
+Filippos Andreadis  
+
+You can find the scientific report [here](https://github.com/philip-andreadis/Learning-from-data-Rug/blob/main/Influence%20of%20Offensive%20Words%20on%20the%20Machine%20Learning%20Detection.pdf)
 
 This repository contains the code and files required to run the experiments we performed for our 
 research. The three main important scripts are `create_features.py`, `train_model.py` and 
